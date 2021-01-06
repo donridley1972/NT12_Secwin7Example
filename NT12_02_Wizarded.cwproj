@@ -1,0 +1,222 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{D6B6A543-8627-435F-B3E9-E66F57A46F46}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NT12_02_Wizarded</RootNamespace>
+    <AssemblyName>NT12_02_Wizarded</AssemblyName>
+    <OutputName>NT12_02_Wizarded</OutputName>
+    <CWOutputType>Exe</CWOutputType>
+    <DefineConstants>_NT10_=&gt;1%3b_NT11_=&gt;1%3b_NT12_=&gt;1%3b_NT_=&gt;1%3bNETTALKLOG=&gt;0%3bStringTheoryLinkMode=&gt;1%3bStringTheoryDllMode=&gt;0%3bMD5=&gt;0%3bxFilesLinkMode=&gt;1%3bxFilesDllMode=&gt;0%3b_XFILES_=&gt;1%3bjFilesLinkMode=&gt;1%3bjFilesDllMode=&gt;0%3b_JFILES_=&gt;1%3bCryptoniteLinkMode=&gt;1%3bCryptoniteDllMode=&gt;0%3b_CRYPTONITE_=&gt;1%3b_CRYPTOINI_=&gt;1%3bWinEventLinkMode=&gt;1%3bWinEventDLLMode=&gt;0%3bMyTableLinkMode=&gt;1%3bMyTableDllMode=&gt;0%3bSecwinLM=&gt;1%3bSecwinDM=&gt;0%3b_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1%3b_NetTalkDllMode_=&gt;0%3b_NetTalkLinkMode_=&gt;1</DefineConstants>
+    <stack_size>16384</stack_size>
+    <CopyCore>True</CopyCore>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+    <warnings>on</warnings>
+    <GenerateMap>True</GenerateMap>
+    <line_numbers>True</line_numbers>
+    <dynamic_base>True</dynamic_base>
+    <dep>True</dep>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+  </PropertyGroup>
+  <ItemGroup>
+    <Library Include="clanet.lib" />
+    <Library Include="Crypt32.lib">
+      <CopyDllToOutputDirectory>Never</CopyDllToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </Library>
+    <FileDriver Include="DOS" />
+    <FileDriver Include="MEMORY" />
+    <FileDriver Include="TOPSPEED" />
+    <Compile Include="NT12_02_Wizarded.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded002.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded003.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded004.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded005.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded006.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded007.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded008.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded009.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded010.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded011.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded012.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded013.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded020.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded023.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded024.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded025.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded027.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded028.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded029.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded030.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded032.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded035.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded036.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded037.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded038.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded039.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded040.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded041.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded058.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded059.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded060.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded061.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded062.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded063.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded064.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded065.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded066.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded067.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded068.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded069.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded070.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded071.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded072.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_WIZARDED_BC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded_BC0.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="NT12_02_Wizarded_nw.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <None Include="caroot.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="CommonPasswords.Txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="dh2048.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="libcrypto-1_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="libssl-1_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="OpenSSL.Exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="zlibwapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>
